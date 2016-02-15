@@ -53,7 +53,12 @@ public class CalculatorTest {
 
 	@Test
 	public void testGetHistory() {
-		fail("Not yet implemented");
+		Calculator cal = new Calculator();
+		cal.add(10);
+		cal.divide(5);
+		cal.multiply(3);
+		cal.subtract(4);
+		assertEquals("0 + 10 / 5 x 3 - 4", cal.getHistory());
 	}
 
 }
